@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EmpowerSkill - Home</title>
+</head>
+<body>
+    <h1>Welcome to EmpowerSkill</h1>
+    
+    <h2>Skill Listings</h2>
+    <ul>
+        {% for skill_listing in skill_listings %}
+            <li>
+                Skill: {{ skill_listing.STATION_NAME }}<br>
+                Location: {{ skill_listing.LOCATION }}<br>
+                Billing: {{ skill_listing.BILLING }}<br>
+                Charging Type: {{ skill_listing.CHARGING_TYPE }}<br>
+                Time to Charge: {{ skill_listing.TIME_TO_CHARGE }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Community Events</h2>
+    <ul>
+        <!-- Loop through events and display them -->
+        <li>Event 1</li>
+        <li>Event 2</li>
+        <!-- ... -->
+    </ul>
+</body>
+</html>
